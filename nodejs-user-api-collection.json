@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "602d5b07-db88-4147-ab8b-7210c3a788b1",
+		"name": "Node.js user",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24602418"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "create user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fname\":\"test fname\",\r\n    \"lname\":\"test lname\",\r\n    \"address\":\"test address update1s\",\r\n    \"postcode\":\"test postcode\",\r\n    \"phone\":\"test phone\",\r\n    \"email\":\"test email\",\r\n    \"username\":\"testusername15\",\r\n    \"password\":\"testpassword\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3015/nodejs/user/create",
+							"host": [
+								"localhost"
+							],
+							"port": "3015",
+							"path": [
+								"nodejs",
+								"user",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "retrieve user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fname\":\"test fname\",\r\n    \"lname\":\"test lname\",\r\n    \"address\":\"test address update1s\",\r\n    \"postcode\":\"test postcodee\",\r\n    \"phone\":\"test phone\",\r\n    \"email\":\"test email\",\r\n    \"username\":\"test username\",\r\n    \"password\":\"test password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3015/nodejs/user/retrieve?id=47",
+							"host": [
+								"localhost"
+							],
+							"port": "3015",
+							"path": [
+								"nodejs",
+								"user",
+								"retrieve"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "47"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fname\":\"test fname updatetest\",\r\n    \"lname\":\"test lname updatetest\",\r\n    \"address\":\"test address updatetest\",\r\n    \"postcode\":\"test postcodee updatetest\",\r\n    \"phone\":\"test phone updatetest\",\r\n    \"email\":\"test email updatetest\",\r\n    \"username\":\"test username updatetest\",\r\n    \"password\":\"test password updatetest\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3015/nodejs/user/update/45",
+							"host": [
+								"localhost"
+							],
+							"port": "3015",
+							"path": [
+								"nodejs",
+								"user",
+								"update",
+								"45"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fname\":\"test fname\",\r\n    \"lname\":\"test lname\",\r\n    \"address\":\"test address update1s\",\r\n    \"postcode\":\"test postcodee\",\r\n    \"phone\":\"test phone\",\r\n    \"email\":\"test email\",\r\n    \"username\":\"test username\",\r\n    \"password\":\"test password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3015/nodejs/user/deleteMultiple/50",
+							"host": [
+								"localhost"
+							],
+							"port": "3015",
+							"path": [
+								"nodejs",
+								"user",
+								"deleteMultiple",
+								"50"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"testusername1\",\r\n    \"password\":\"testpassword\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3015/nodejs/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3015",
+							"path": [
+								"nodejs",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
